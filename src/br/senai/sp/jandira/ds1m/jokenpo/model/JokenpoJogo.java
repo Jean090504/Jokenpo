@@ -54,15 +54,21 @@ public class JokenpoJogo {
         System.out.println("O computador escolheu: " + escolhaDoComputador);
 
         if (usuario == (escolhaDoComputador)) {
+            System.out.println("");
             System.out.println("Empate!");
+            System.out.println("");
         } else if (
                 (usuario == ("Pedra") && escolhaDoComputador == ("Tesoura")) ||
                         (usuario == ("Papel") && escolhaDoComputador == ("Pedra")) ||
                         (usuario == ("Tesoura") && escolhaDoComputador == ("Papel"))
         ) {
-            System.out.println("Você venceu!");
+            System.out.println("");
+            System.out.println("Você venceu!!!! :)");
+            System.out.println("");
         } else {
-            System.out.println("O computador venceu!");
+            System.out.println("");
+            System.out.println("O computador venceu! :(");
+            System.out.println("");
         }
 
         reiniciarPrograma();
