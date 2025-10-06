@@ -28,7 +28,7 @@ public class JokenpoJogo {
 
     public void rodarJogo() {
         Random random = new Random();
-        String[] escolhas = {"Pedra", "Papel", "Tesoura"};
+    String[] escolhas = {"Papel", "Pedra", "Tesoura"};
 
         int indice = random.nextInt(escolhas.length);
         escolhaDoComputador = escolhas[indice];
@@ -60,8 +60,8 @@ public class JokenpoJogo {
         } else if (
                 (usuario.equals("Pedra") && escolhaDoComputador.equals("Tesoura")) ||
                         (usuario.equals("Papel") && escolhaDoComputador.equals("Pedra")) ||
-                        (usuario.equals("Tesoura") && escolhaDoComputador.equals("Papel"))
-        ) {
+                        (usuario.equals("Tesoura") && escolhaDoComputador.equals("Papel")))
+            {
             System.out.println("");
             System.out.println("Você venceu!!!! :)");
             System.out.println("");
