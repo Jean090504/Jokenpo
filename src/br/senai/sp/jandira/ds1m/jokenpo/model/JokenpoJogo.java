@@ -53,14 +53,14 @@ public class JokenpoJogo {
         System.out.println("Você escolheu: " + usuario);
         System.out.println("O computador escolheu: " + escolhaDoComputador);
 
-        if (usuario == (escolhaDoComputador)) {
+        if (usuario.equals(escolhaDoComputador)) {
             System.out.println("");
             System.out.println("Empate!");
             System.out.println("");
         } else if (
-                (usuario == ("Pedra") && escolhaDoComputador == ("Tesoura")) ||
-                        (usuario == ("Papel") && escolhaDoComputador == ("Pedra")) ||
-                        (usuario == ("Tesoura") && escolhaDoComputador == ("Papel"))
+                (usuario.equals("Pedra") && escolhaDoComputador.equals("Tesoura")) ||
+                        (usuario.equals("Papel") && escolhaDoComputador.equals("Pedra")) ||
+                        (usuario.equals("Tesoura") && escolhaDoComputador.equals("Papel"))
         ) {
             System.out.println("");
             System.out.println("Você venceu!!!! :)");
@@ -81,9 +81,12 @@ public class JokenpoJogo {
         String reinicioDePrograma = leitor.nextLine();
         if (reinicioDePrograma.equals("S") || reinicioDePrograma.equals("s")){
             obterDados();
-        } else {
+        } else if (reinicioDePrograma.equals("N") || reinicioDePrograma.equals("n")){
             System.out.println("Obrigado por usar o programa!");
             System.out.println("Finalizando o programa...");
+        } else{
+            System.out.println("Escolha inválida!");
+            reiniciarPrograma();
         }
     }
 }
