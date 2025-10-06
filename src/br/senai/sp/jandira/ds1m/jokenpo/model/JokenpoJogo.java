@@ -28,7 +28,7 @@ public class JokenpoJogo {
 
     public void rodarJogo() {
         Random random = new Random();
-    String[] escolhas = {"Papel", "Pedra", "Tesoura"};
+        String[] escolhas = {"Papel", "Pedra", "Tesoura"};
 
         int indice = random.nextInt(escolhas.length);
         escolhaDoComputador = escolhas[indice];
